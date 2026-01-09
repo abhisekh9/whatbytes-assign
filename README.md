@@ -1,36 +1,119 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛒 E-Commerce Product Listing App
 
-## Getting Started
+A modern **e-commerce product listing application** built with **Next.js (App Router)**, featuring dynamic filtering, URL-synced search, responsive UI, and optimized performance. The app is deployed on **Vercel** and ready for production.
 
-First, run the development server:
+---
 
-```bash
+## 🚀 Live Demo
+
+🔗 **Deployed URL:**  
+> https://your-project-name.vercel.app
+
+---
+
+## ✨ Features
+
+- 🧾 Product listing with responsive grid layout  
+- 🔍 Search products with URL synchronization  
+- 🗂 Filter by category and price range  
+- ⭐ Featured product card (last product highlighted)  
+- 🛒 Add to cart functionality with global state  
+- 📦 Product detail pages with ratings & descriptions  
+- ⚡ Optimized images using Next.js Image component  
+- 📱 Fully responsive (desktop & mobile)  
+- 🚀 Deployed on Vercel  
+
+---
+
+## 🧑‍💻 Tech Stack
+
+- **Framework:** Next.js 16 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **State Management:** React Context API
+- **Icons:** Lucide React
+- **Deployment:** Vercel
+
+---
+
+## 🛠️ Getting Started
+
+### 1️⃣ Clone the repository
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+
+shell
+Copy code
+
+### 2️⃣ Install dependencies
+npm install
+
+graphql
+Copy code
+
+### 3️⃣ Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+yaml
+Copy code
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Open **http://localhost:3000** in your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🏗️ Production Build
 
-To learn more about Next.js, take a look at the following resources:
+To test the production build locally:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+npm run build
+npm run start
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+yaml
+Copy code
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🖼️ Images & Assets
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- All product images are stored in the **`public/`** folder  
+- Image paths are referenced like:
+image: '/shoes.jpeg'
+
+yaml
+Copy code
+- Images are optimized using **Next.js Image**
+
+---
+
+## 🌐 Deployment
+
+This project is deployed using **Vercel**.
+
+### Deployment Steps:
+1. Push the project to GitHub
+2. Import the repository into Vercel
+3. Use default Next.js build settings
+4. Automatic deployments on every push to `main`
+
+---
+
+## 📌 Notes
+
+- Filters are synchronized with the URL using `useSearchParams`
+- Suspense boundaries are used to support static rendering
+- The last product in the grid is intentionally styled as a featured product
+
+---
+
+## 📈 Future Enhancements
+
+- User authentication
+- Persistent cart (localStorage / backend)
+- Pagination or infinite scrolling
+- Backend API integration
+- Checkout & payment flow
+
+---
+
+## 📁 Project Structure
+
