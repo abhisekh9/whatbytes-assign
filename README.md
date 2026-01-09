@@ -7,7 +7,7 @@ A modern **e-commerce product listing application** built with **Next.js (App Ro
 ## 🚀 Live Demo
 
 🔗 **Deployed URL:**  
-> https://your-project-name.vercel.app
+> https://your-project-name.vercel.app](https://whatbytes-assign-kappa.vercel.app/
 
 ---
 
@@ -115,5 +115,4 @@ This project is deployed using **Vercel**.
 
 ---
 
-## 📁 Project Structure
-
+This project is made by **Abhishek Yadav**.
