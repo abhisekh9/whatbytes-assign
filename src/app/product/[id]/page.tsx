@@ -8,6 +8,7 @@ import Footer from '@/components/Footer';
 import { products } from '@/data/products';
 import { useCart } from '@/context/cartContext';
 import { Star } from 'lucide-react';
+import Image from 'next/image';
 
 export default function ProductDetail() {
   const params = useParams();
@@ -47,8 +48,14 @@ export default function ProductDetail() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* Image Section */}
             <div>
-              <div className="aspect-square bg-gray-200 rounded-lg flex items-center justify-center">
-                <span className="text-9xl">{getProductEmoji(product.title)}</span>
+              <div className="relative aspect-square bg-gray-100 rounded-lg overflow-hidden">
+                <Image
+                  src={product.image}
+                  alt={product.title}
+                  fill
+                  className="object-contain p-6"
+                  priority
+                />
               </div>
             </div>
 
